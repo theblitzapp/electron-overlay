@@ -36,7 +36,22 @@
             ],
             "conditions": [
                 ['OS != "win"', {
-                    'sources!': ['./src/main.cc']
+                    'sources!': [
+                        "./src/ipc/tinyipc.h",
+                        "./src/ipc/ipcmsg.h",
+                        "./src/ipc/ipclink.h",
+                        "./src/ipc/ipclink.cc",
+                        "./src/ipc/ipccenter.h",
+                        "./src/ipc/ipccenter.cc",
+                        "./src/overlay.h",
+                        "./src/utils/n-utils.h",
+                        "./src/utils/win-utils.h",
+                        "./src/utils/node_async_call.h",
+                        "./src/utils/node_async_call.cc",
+                        "./src/3rd/nlohmann/json.hpp",
+                        "./src/message/gmessage.hpp",
+                        "./src/main.cc"
+                        ]
                     }
                 ],
                 [
