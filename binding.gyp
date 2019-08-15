@@ -35,6 +35,10 @@
                 "-fno-exceptions"
             ],
             "conditions": [
+                ['OS != "win"', {
+                    'sources!': ['./src/main.cc']
+                    }
+                ],
                 [
                     "OS=='win'", {
                         "defines": [
